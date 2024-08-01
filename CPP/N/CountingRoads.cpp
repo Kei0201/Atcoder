@@ -8,7 +8,15 @@ int main () {
     for (int i = 0; i < m; i++) {
         cin >> a[i] >> b[i];
     }
-
-    // 問題の内容は理解している
-    // 2024/08/01
+    
+    int count;
+    for (int i = 0; i < n; i++) {
+        count = 0;
+        for (int j = 0; j < m; j++) {
+            if (i+1 == a[j] || i+1 == b[j]) {
+                count++;
+            }
+        }
+        cout << count << endl;
+    }
 }
